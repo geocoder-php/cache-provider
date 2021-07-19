@@ -23,6 +23,12 @@ You can find compatible drivers on [packagist](https://packagist.org/providers/p
 By default, the result is cached forever. 
 You can  set a cache expiry by passing an integer representing the number of seconds as the third parameter.
 
+Make sure to use the ArrayCachePool
+```php
+use Geocoder\Provider\Cache\ProviderCache;
+use Cache\Adapter\PHPArray\ArrayCachePool;
+```
+
 ```php
 $httpClient = new \Http\Adapter\Guzzle6\Client();
 $provider = new \Geocoder\Provider\GoogleMaps\GoogleMaps($httpClient);
