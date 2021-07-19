@@ -26,7 +26,6 @@ You can  set a cache expiry by passing an integer representing the number of sec
 Make sure to use the ArrayCachePool before calling it's methods
 
 ```php
-use Geocoder\Provider\Cache\ProviderCache;
 use Cache\Adapter\PHPArray\ArrayCachePool;
 
 $httpClient = new \Http\Adapter\Guzzle6\Client();
